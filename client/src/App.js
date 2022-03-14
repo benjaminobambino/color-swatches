@@ -13,8 +13,15 @@ function App() {
     });
   };
 
+  const getSwatches = async () => {
+    await axios.get('http://localhost:8000/swatches/').then((res) => {
+      setSwatches(res.data);
+    });
+  };
+
   useEffect(() => {
     getColors();
+    getSwatches();
   }, []);
 
   return <div className="App">{/* <p>{colors}</p> */}</div>;
