@@ -1,12 +1,13 @@
 import '../../styles/Sidebar.css'
 import RandomButton from './RandomButton'
+import Colors from './Colors'
 
-const Sidebar = () => {
+const Sidebar = ({ colors }) => {
   return (
     <div className="sidebar">
       <section className="sidebar-content">
         <RandomButton />
-        <p>Red</p>
+        <Colors colors={colors}/>
       </section>
     </div>
   )
