@@ -1,13 +1,16 @@
 import '../../styles/Swatches.css'
+import SwatchCard from './SwatchCard'
 
-const Swatches = ({ colors }) => {
+const Swatches = ({ swatches }) => {
   return (
     <div className="swatches">
       <section className="swatch-card-container">
-        <p>swatches</p>
-        <p>swatches</p>
-        <p>swatches</p>
-        <p>swatches</p>
+        {
+          swatches.map((swatch) => {
+            // return <p key={swatch.id}>{swatch.hex}</p>
+            return <SwatchCard key={swatch.id} swatch={swatch} />
+          })
+        }
       </section>
     </div>
   )

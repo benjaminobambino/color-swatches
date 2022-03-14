@@ -33,7 +33,7 @@ function App() {
       <section className="main">
         <Sidebar colors={colors} />
         <Routes>
-          <Route path="/" element={<Swatches />} />
+          <Route path="/" element={<Swatches swatches={swatches} />} />
           {/* <Route path="/:swatchId" /> */}
         </Routes>
       </section>
