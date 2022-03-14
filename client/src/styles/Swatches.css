@@ -15,8 +15,8 @@
 .swatch-card {
   border-radius: 7px;
   margin: auto 2vw 3vh;
-  border: 2px solid #e2dfdf;
-  box-shadow: 0 0 2px rgba(15, 14, 14, 0.2);
+  border: 1.2px solid #e2dfdf;
+  box-shadow: 0 0 2px rgba(114, 106, 106, 0.2);
   -webkit-box-shadow: 0 0 2px rgba(15, 14, 14, 0.2);
 }
 
