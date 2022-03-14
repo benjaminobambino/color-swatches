@@ -6,8 +6,8 @@ const Swatches = ({ swatches, swatchLimit }) => {
   const [currentPage, setCurrentPage] = useState(1);
 
   function changePage(event) {
-    const pageNumber = Number(event.target.textContent)
-    setCurrentPage(pageNumber)
+    const clickedPage = Number(event.target.textContent)
+    setCurrentPage(clickedPage)
   }
 
   const getSwatchPage = () => {
@@ -30,11 +30,11 @@ const Swatches = ({ swatches, swatchLimit }) => {
       </section>
 
       <div className="page-numbers">
-        {getPages().map((pageNumber, index) => (
+        {getPages().map((pageNumber) => (
           <p
-            key={index}
+            key={pageNumber}
             onClick={changePage}
-            className={`page ${currentPage === pageNumber ? 'active' : null}`}
+            className={`page-number ${currentPage === pageNumber ? 'active' : null}`}
           >
             {pageNumber}
           </p>
