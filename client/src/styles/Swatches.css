@@ -1,6 +1,7 @@
 .swatches {
   background-color: #ffffff;
   margin-top: 7vh;
+  color: #484d4d;
 }
 
 .swatch-card-container {
@@ -25,6 +26,21 @@
 }
 
 .swatch-card p {
-  color: #484d4d;
   margin: 6px 12px;
+}
+
+.page-numbers {
+  display: flex;
+  justify-content: center;
+}
+
+.page-number {
+  font-size: 18px;
+  padding: 10px 5px 1px;
+  margin: 5vh .5vw;
+}
+
+.page-number.active {
+  font-weight: bold;
+  border-bottom: 1.5px solid #484d4d;
 }
