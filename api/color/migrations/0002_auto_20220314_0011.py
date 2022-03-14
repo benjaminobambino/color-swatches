@@ -2,6 +2,156 @@
 
 from django.db import migrations
 
+def seed(apps, schema_editor):
+    # Model variables
+    Swatch = apps.get_model('color', 'Swatch')
+    Color = apps.get_model('color', 'Color')
+
+    # Color seeds
+    red = Color(name='Red')
+    orange = Color(name='Orange')
+    yellow = Color(name='Yellow')
+    green = Color(name='Green')
+    blue = Color(name='Blue')
+    purple = Color(name='Purple')
+    brown = Color(name='Brown')
+    gray = Color(name='Gray')
+
+    # Seeding colors
+    red.save()
+    orange.save()
+    yellow.save()
+    green.save()
+    blue.save()
+    purple.save()
+    brown.save()
+    gray.save()
+
+    # Red swatch seeds
+    Swatch(color = red, hex='#800000').save()
+    Swatch(color = red, hex='#8b0000').save()
+    Swatch(color = red, hex='#b22222').save()
+    Swatch(color = red, hex='#cb4154').save()
+    Swatch(color = red, hex='#cc3333').save()
+    Swatch(color = red, hex='#ce2029').save()
+    Swatch(color = red, hex='#dc143c').save()
+    Swatch(color = red, hex='#ed1c24').save()
+    Swatch(color = red, hex='#ff0000').save()
+    Swatch(color = red, hex='#ff0028').save()
+    Swatch(color = red, hex='#ff4040').save()
+    Swatch(color = red, hex='#ff355e').save()
+    Swatch(color = red, hex='#ff2400').save()
+
+    # Orange swatch seeds
+    Swatch(color = orange, hex='#ed872d').save()
+    Swatch(color = orange, hex='#ff4500').save()
+    Swatch(color = orange, hex='#ff7518').save()
+    Swatch(color = orange, hex='#ff8c00').save()
+    Swatch(color = orange, hex='#ff8c69').save()
+    Swatch(color = orange, hex='#ff8243').save()
+    Swatch(color = orange, hex='#ff9933').save()
+    Swatch(color = orange, hex='#ffa343').save()
+    Swatch(color = orange, hex='#ffa500').save()
+    Swatch(color = orange, hex='#ffae42').save()
+    Swatch(color = orange, hex='#ffb347').save()
+    Swatch(color = orange, hex='#ffc87c').save()
+    Swatch(color = orange, hex='#ffcc99').save()
+
+    # Yellow swatch seeds
+    Swatch(color = yellow, hex='#f0e68c').save()
+    Swatch(color = yellow, hex='#fada5e').save()
+    Swatch(color = yellow, hex='#fbec5d').save()
+    Swatch(color = yellow, hex='#fcf75e').save()
+    Swatch(color = yellow, hex='#fcffa4').save()
+    Swatch(color = yellow, hex='#fdfd96').save()
+    Swatch(color = yellow, hex='#ffe135').save()
+    Swatch(color = yellow, hex='#fff44f').save()
+    Swatch(color = yellow, hex='#fffacd').save()
+    Swatch(color = yellow, hex='#ffff00').save()
+    Swatch(color = yellow, hex='#ffff31').save()
+    Swatch(color = yellow, hex='#ffff66').save()
+    Swatch(color = yellow, hex='#ffffe0').save()
+
+    # Green swatch seeds
+    Swatch(color = green, hex='#008000').save()
+    Swatch(color = green, hex='#00fa9a').save()
+    Swatch(color = green, hex='#00ff00').save()
+    Swatch(color = green, hex='#00ff7f').save()
+    Swatch(color = green, hex='#2e8b57').save()
+    Swatch(color = green, hex='#32cd32').save()
+    Swatch(color = green, hex='#3cb371').save()
+    Swatch(color = green, hex='#7cfc00').save()
+    Swatch(color = green, hex='#7fff00').save()
+    Swatch(color = green, hex='#8fbc8f').save()
+    Swatch(color = green, hex='#90ee90').save()
+    Swatch(color = green, hex='#98fb98').save()
+    Swatch(color = green, hex='#adff2f').save()
+
+    # Blue swatch seeds
+    Swatch(color = blue, hex='#000080').save()
+    Swatch(color = blue, hex='#00008b').save()
+    Swatch(color = blue, hex='#0000ff').save()
+    Swatch(color = blue, hex='#191970').save()
+    Swatch(color = blue, hex='#1e90ff').save()
+    Swatch(color = blue, hex='#4169e1').save()
+    Swatch(color = blue, hex='#4682b4').save()
+    Swatch(color = blue, hex='#87ceeb').save()
+    Swatch(color = blue, hex='#87cefa').save()
+    Swatch(color = blue, hex='#a1caf1').save()
+    Swatch(color = blue, hex='#add8e6').save()
+    Swatch(color = blue, hex='#b0c4de').save()
+    Swatch(color = blue, hex='#e7feff').save()
+
+    # Purple swatch seeds
+    Swatch(color = purple, hex='#4b0082').save()
+    Swatch(color = purple, hex='#663399').save()
+    Swatch(color = purple, hex='#7b68ee').save()
+    Swatch(color = purple, hex='#800080').save()
+    Swatch(color = purple, hex='#8a2be2').save()
+    Swatch(color = purple, hex='#9370db').save()
+    Swatch(color = purple, hex='#9400d3').save()
+    Swatch(color = purple, hex='#9932cc').save()
+    Swatch(color = purple, hex='#ba55d3').save()
+    Swatch(color = purple, hex='#ccccff').save()
+    Swatch(color = purple, hex='#d8bfd8').save()
+    Swatch(color = purple, hex='#dda0dd').save()
+    Swatch(color = purple, hex='#e6e6fa').save()
+
+    # Brown swatch seeds
+    Swatch(color = brown, hex='#8b4513').save()
+    Swatch(color = brown, hex='#a0522d').save()
+    Swatch(color = brown, hex='#a52a2a').save()
+    Swatch(color = brown, hex='#bc8f8f').save()
+    Swatch(color = brown, hex='#cd853f').save()
+    Swatch(color = brown, hex='#d2691e').save()
+    Swatch(color = brown, hex='#deaa88').save()
+    Swatch(color = brown, hex='#f4a460').save()
+    Swatch(color = brown, hex='#ffdead').save()
+    Swatch(color = brown, hex='#ffe4b5').save()
+    Swatch(color = brown, hex='#ffe4c4').save()
+    Swatch(color = brown, hex='#ffe4cd').save()
+    Swatch(color = brown, hex='#ffebcd').save()
+
+    # Gray swatch seeds
+    Swatch(color = gray, hex='#696969').save()
+    Swatch(color = gray, hex='#708090').save()
+    Swatch(color = gray, hex='#778899').save()
+    Swatch(color = gray, hex='#808080').save()
+    Swatch(color = gray, hex='#a9a9a9').save()
+    Swatch(color = gray, hex='#acacac').save()
+    Swatch(color = gray, hex='#b2beb5').save()
+    Swatch(color = gray, hex='#c0c0c0').save()
+    Swatch(color = gray, hex='#c9c0bb').save()
+    Swatch(color = gray, hex='#dcdcdc').save()
+    Swatch(color = gray, hex='#d3d3d3').save()
+    Swatch(color = gray, hex='#e5e4e2').save()
+    Swatch(color = gray, hex='#f4f0ec').save()
+
+def fallow(apps, schema_editor):
+    Swatch = apps.get_model('color', 'Swatch')
+    Color = apps.get_model('color', 'Color')
+    Color.objects.all().delete()
+    Swatch.objects.all().delete()
 
 class Migration(migrations.Migration):
 
@@ -10,4 +160,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
+        migrations.RunPython(seed, fallow)
     ]
