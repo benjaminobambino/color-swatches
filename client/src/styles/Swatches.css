@@ -23,3 +23,8 @@
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
+
+.swatch-card p {
+  color: #484d4d;
+  margin: 6px 12px;
+}
