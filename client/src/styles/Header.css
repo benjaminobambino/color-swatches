@@ -4,7 +4,7 @@
   justify-content: space-between;
 
   background-color: #363c3c;
-  height: 100px;
+  height: 14vh;
 }
 
 .logo, .search-bar {
@@ -12,7 +12,7 @@
 }
 
 .search-bar input {
-  height: 55px;
+  height: 8vh;
   width: 23vw;
   border-radius: 7px;
   border: none;

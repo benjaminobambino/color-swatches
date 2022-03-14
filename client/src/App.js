@@ -29,7 +29,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Sidebar />
+      <section className="main">
+        <Sidebar colors={colors} />
+      </section>
     </div>
   );
 }
