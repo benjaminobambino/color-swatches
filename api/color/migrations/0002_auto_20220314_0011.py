@@ -148,8 +148,10 @@ def seed(apps, schema_editor):
     Swatch(color = gray, hex='#f4f0ec').save()
 
 def fallow(apps, schema_editor):
+    # Model variables
     Swatch = apps.get_model('color', 'Swatch')
     Color = apps.get_model('color', 'Color')
+    # Deletes seeds
     Color.objects.all().delete()
     Swatch.objects.all().delete()
 
@@ -160,5 +162,6 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
+        # runs migration file to seed or remove
         migrations.RunPython(seed, fallow)
     ]
