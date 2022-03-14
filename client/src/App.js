@@ -2,6 +2,7 @@ import './styles/App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
 
 function App() {
   const [colors, setColors] = useState([]);
@@ -24,7 +25,11 @@ function App() {
     getSwatches();
   }, []);
 
-  return <div className="App">{/* <p>{colors}</p> */}</div>;
+  return (
+    <div className="App">
+      <Header />
+    </div>
+  );
 }
 
 export default App;
