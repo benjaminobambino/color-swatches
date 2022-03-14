@@ -4,6 +4,7 @@ import axios from 'axios';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Sidebar from './components/sidebar/Sidebar';
+import Swatches from './components/swatches/Swatches';
 
 function App() {
   const [colors, setColors] = useState([]);
@@ -31,6 +32,10 @@ function App() {
       <Header />
       <section className="main">
         <Sidebar colors={colors} />
+        <Routes>
+          <Route path="/" element={<Swatches />} />
+          {/* <Route path="/:swatchId" /> */}
+        </Routes>
       </section>
     </div>
   );
