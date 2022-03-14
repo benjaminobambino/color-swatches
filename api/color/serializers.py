@@ -1,6 +1,8 @@
 from rest_framework import serializers
 from .models import Color, Swatch
 
+# Creates API readable JSON for models
+
 class SwatchSerializer(serializers.HyperlinkedModelSerializer):
   color_url = serializers.HyperlinkedRelatedField(
     view_name='color_detail',
