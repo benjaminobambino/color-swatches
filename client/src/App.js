@@ -2,7 +2,7 @@ import './styles/App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
+import Header from './components/header/Header';
 
 function App() {
   const [colors, setColors] = useState([]);
