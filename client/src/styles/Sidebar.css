@@ -1,7 +1,7 @@
 .sidebar {
   background-color: #d6d8d8;
   color: #3e4444;
-  font-size: 24px;
+  font-size: 20px;
   height: 86vh;
   width: 20vw;
 }
@@ -20,4 +20,14 @@
   background-color: #ffffff;
   border: 1px solid #000000;
   border-radius: 7px;
+}
+
+.colors {
+  margin-top: 3vh;
+}
+
+.color {
+  margin-top: 0;
+  padding-top: 0;
+  margin-block-end: 1vh;
 }

@@ -3,7 +3,7 @@ const Colors = ({ colors }) => {
     <div className="colors">
       {
         colors.map((color) => {
-          return <p>{color.name}</p>
+          return <p className="color" key={color.id}>{color.name}</p>
         })
       }
     </div>
