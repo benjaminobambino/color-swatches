@@ -1,9 +1,13 @@
 import '../../styles/Sidebar.css'
+import RandomButton from './RandomButton'
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <p>Sidebar</p>
+      <section className="sidebar-content">
+        <RandomButton />
+        <p>Red</p>
+      </section>
     </div>
   )
 }
