@@ -7,3 +7,7 @@
 .main {
   display: flex;
 }
+
+button, .swatch-card, .page-number {
+  cursor: pointer;
+}
