@@ -1,4 +1,11 @@
-const Colors = ({ colors }) => {
+import { useState } from 'react';
+import useData from '../../hooks/useData';
+
+const Colors = () => {
+  const [colors, setColors] = useState([]);
+
+  useData('colors/', setColors);
+
   return (
     <div className="colors">
       {
