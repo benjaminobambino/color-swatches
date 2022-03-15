@@ -1,10 +1,12 @@
 import { useNavigate } from 'react-router-dom'
 
-const RandomButton = () => {
+const RandomButton = ({ swatches }) => {
   const navigate = useNavigate()
+  const randomId = Math.floor(Math.random() * swatches.length) + 1
+  
 
   const handleClick = () => {
-    navigate(`/25`)
+    navigate(`/${randomId}`)
   }
 
   return (

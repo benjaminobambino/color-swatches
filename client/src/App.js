@@ -32,7 +32,7 @@ function App() {
     <div className="App">
       <Header />
       <section className="main">
-        <Sidebar colors={colors} />
+        <Sidebar colors={colors} swatches={swatches} />
         <Routes>
           <Route
             path="/"

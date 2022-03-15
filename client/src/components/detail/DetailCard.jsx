@@ -14,7 +14,7 @@ const DetailCard = () => {
 
   useEffect(() => {
     getSwatchDetail()
-  }, [])
+  }, [params])
 
   return (
     <div className="detail-card">
