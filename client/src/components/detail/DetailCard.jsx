@@ -6,13 +6,13 @@ const DetailCard = () => {
   const [swatch, setSwatch] = useState({})
   const params = useParams()
 
-  const getSwatchDetail = async () => {
-    await Client.get(`swatches/${params.swatchId}`).then((res) => {
-      setSwatch(res.data);
-    });
-  };
-
   useEffect(() => {
+    const getSwatchDetail = async () => {
+      await Client.get(`swatches/${params.swatchId}`).then((res) => {
+        setSwatch(res.data);
+      });
+    };
+    
     getSwatchDetail()
   }, [params])
 
