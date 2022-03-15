@@ -2,8 +2,11 @@
   background-color: #d6d8d8;
   color: #3e4444;
   font-size: 20px;
-  height: 86vh;
+  height: 90vh;
   width: 20vw;
+  border-right: 1px solid #afb8b8;
+  box-shadow: 0 0 5px rgba(114, 106, 106, .8);
+  position: relative;
 }
 
 .sidebar-content {
@@ -20,6 +23,7 @@
   background-color: #ffffff;
   border: 1px solid #000000;
   border-radius: 7px;
+  overflow: visible;
 }
 
 .colors {

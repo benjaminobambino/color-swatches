@@ -1,10 +1,12 @@
 .swatches {
   background-color: #ffffff;
-  margin-top: 7vh;
   color: #484d4d;
+  height: 90vh;
+  overflow-y: scroll;
 }
 
 .swatch-card-container {
+  margin-top: 7vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;

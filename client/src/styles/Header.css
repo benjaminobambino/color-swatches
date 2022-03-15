@@ -5,6 +5,9 @@
 
   background-color: #363c3c;
   height: 100px;
+  box-shadow: 0 0 5px rgba(114, 106, 106, .8);
+  z-index: 1;
+  position: relative;
 }
 
 .logo, .search-bar {
