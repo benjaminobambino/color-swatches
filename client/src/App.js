@@ -1,6 +1,6 @@
 import './styles/App.css';
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import Client from './services/api';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Sidebar from './components/sidebar/Sidebar';
@@ -12,13 +12,13 @@ function App() {
   const [swatches, setSwatches] = useState([]);
 
   const getColors = async () => {
-    await axios.get('http://localhost:8000/colors/').then((res) => {
+    await Client.get('colors/').then((res) => {
       setColors(res.data);
     });
   };
 
   const getSwatches = async () => {
-    await axios.get('http://localhost:8000/swatches/').then((res) => {
+    await Client.get('swatches/').then((res) => {
       setSwatches(res.data);
     });
   };
