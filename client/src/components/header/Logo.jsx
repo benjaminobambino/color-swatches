@@ -1,7 +1,9 @@
+const logoSymbol = './logo-symbol.svg';
+
 const Logo = () => {
   return (
     <div className="logo">
-      <img src="./logo-symbol.svg" alt="logo" />
+      <img src={logoSymbol} alt="logo" />
     </div>
   )
 }
