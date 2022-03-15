@@ -10,7 +10,7 @@ const useData = (slug, setState) => {
     };
 
     getData();
-  }, []);
+  }, [slug, setState]);
 };
 
 export default useData;
