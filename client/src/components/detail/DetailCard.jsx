@@ -1,13 +1,13 @@
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import axios from 'axios'
+import Client from '../../services/api'
 
 const DetailCard = () => {
   const [swatch, setSwatch] = useState({})
   const params = useParams()
 
   const getSwatchDetail = async () => {
-    await axios.get(`http://localhost:8000/swatches/${params.swatchId}`).then((res) => {
+    await Client.get(`swatches/${params.swatchId}`).then((res) => {
       setSwatch(res.data);
     });
   };
