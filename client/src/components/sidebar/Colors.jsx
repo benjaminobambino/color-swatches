@@ -3,6 +3,7 @@ import useData from '../../hooks/useData';
 
 const Colors = () => {
   const [colors, setColors] = useState([]);
+
   useData('colors/', setColors);
 
   return (
