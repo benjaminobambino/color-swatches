@@ -1,0 +1,22 @@
+.detail {
+  margin: 7vh auto;
+}
+
+.detail-card {
+  border: 1px solid #1c1f1f;
+  border-radius: 7px;
+  height: 82vw;
+}
+
+.detail-card-background {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 70vw;
+  width: 70vw;
+}
+
+.detail-card p {
+  font-size: 4.5vw;
+  margin: 3vw 4vw;
+  color: #1c1f1f;
+}

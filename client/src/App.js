@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Sidebar from './components/sidebar/Sidebar';
 import Swatches from './components/swatches/Swatches';
-import SwatchDetail from './components/swatches/SwatchDetail';
+import Detail from './components/detail/Detail';
 
 function App() {
   const [colors, setColors] = useState([]);
@@ -38,7 +38,7 @@ function App() {
             path="/"
             element={<Swatches swatches={swatches} swatchLimit={12} />}
           />
-          <Route path="/:swatchId" element={<SwatchDetail />} />
+          <Route path="/:swatchId" element={<Detail />} />
         </Routes>
       </section>
     </div>
