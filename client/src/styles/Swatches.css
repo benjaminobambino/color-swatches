@@ -7,6 +7,7 @@
 
 .swatch-card-container {
   margin-top: 7vh;
+  margin-bottom: 5vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -36,15 +37,25 @@
 .page-numbers {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+
+  margin: auto 2vw 5vh;
 }
 
 .page-number {
   font-size: 18px;
   padding: 10px 5px 1px;
-  margin: 5vh .5vw;
+  margin: 0 .5vw;
 }
 
 .page-number.active {
   font-weight: bold;
   border-bottom: 1.5px solid #484d4d;
+}
+
+@media (max-width: 500px) {
+  .swatch-card-container {
+    width: auto;
+    margin-bottom: auto;
+  }
 }
