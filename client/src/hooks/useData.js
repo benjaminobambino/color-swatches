@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import Client from './api';
+import Client from '../services/api';
 
 const useData = (slug, setState) => {
   useEffect(() => {

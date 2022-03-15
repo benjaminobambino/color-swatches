@@ -5,7 +5,7 @@ import Header from './components/header/Header';
 import Sidebar from './components/sidebar/Sidebar';
 import Swatches from './components/swatches/Swatches';
 import Detail from './components/detail/Detail';
-import useData from './services/useData';
+import useData from './hooks/useData';
 
 function App() {
   const [colors, setColors] = useState([]);

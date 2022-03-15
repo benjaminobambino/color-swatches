@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { useState } from 'react'
-import useData from '../../services/useData'
+import useData from '../../hooks/useData'
 
 const DetailCard = () => {
   const [swatch, setSwatch] = useState({})
