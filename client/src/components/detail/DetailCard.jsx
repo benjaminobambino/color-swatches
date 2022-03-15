@@ -1,20 +1,12 @@
 import { useParams } from 'react-router-dom'
-import { useEffect, useState } from 'react'
-import Client from '../../services/api'
+import { useState } from 'react'
+import useData from '../../services/useData'
 
 const DetailCard = () => {
   const [swatch, setSwatch] = useState({})
   const params = useParams()
 
-  useEffect(() => {
-    const getSwatchDetail = async () => {
-      await Client.get(`swatches/${params.swatchId}`).then((res) => {
-        setSwatch(res.data);
-      });
-    };
-    
-    getSwatchDetail()
-  }, [params])
+  useData(`swatches/${params.swatchId}`, setSwatch)
 
   return (
     <div className="detail-card">
