@@ -1,3 +1,26 @@
-.App {
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   background-color: #363c3c;
+  height: 100px;
+  box-shadow: 0 0 5px rgba(114, 106, 106, .8);
+  z-index: 1;
+  position: relative;
+}
+
+.logo, .search-bar {
+  margin: auto 2vw;
+  margin: auto 20px;
+}
+
+.search-bar input {
+  height: 50px;
+  width: 23vw;
+  border-radius: 7px;
+  border: none;
+  padding-left: 16px;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 20px;
 }

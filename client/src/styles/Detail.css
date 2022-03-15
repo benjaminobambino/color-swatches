@@ -1,0 +1,43 @@
+.detail {
+  display: flex;
+  flex-flow: column;
+
+  height: 90vh;
+  overflow-y: scroll;
+  margin: 0 auto;
+}
+
+.detail-card {
+  margin-top: 7vh;
+  border: 1px solid #1c1f1f;
+  border-radius: 7px;
+  height: 48vh;
+}
+
+.detail-card-background {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 40vh;
+  width: 60vw;
+  max-width: 500px;
+}
+
+.detail-card p {
+  font-size: 4.5vw;
+  font-size: 30px;
+  margin: 2vh 4vw;
+  color: #1c1f1f;
+}
+
+.clear-button {
+  margin: 5vh auto;
+  width: 25vw;
+  height: 5vh;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #424848;
+  background-color: #ffffff;
+  border: 1px solid #1c1f1f;
+  border-radius: 7px;
+}

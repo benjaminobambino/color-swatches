@@ -2,7 +2,10 @@ import './styles/App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
+import Header from './components/header/Header';
+import Sidebar from './components/sidebar/Sidebar';
+import Swatches from './components/swatches/Swatches';
+import Detail from './components/detail/Detail';
 
 function App() {
   const [colors, setColors] = useState([]);
@@ -28,6 +31,16 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <section className="main">
+        <Sidebar colors={colors} swatches={swatches} />
+        <Routes>
+          <Route
+            path="/"
+            element={<Swatches swatches={swatches} swatchLimit={12} />}
+          />
+          <Route path="/:swatchId" element={<Detail />} />
+        </Routes>
+      </section>
     </div>
   );
 }
