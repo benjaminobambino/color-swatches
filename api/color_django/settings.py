@@ -139,12 +139,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
+    'https://colorswatches.netlify.app',
 ]
 
 #CSRF settings
 
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:3000',
+    'https://colorswatches.netlify.app',
 ]
 
 # Allows Django's built-in static files to deploy properly in Heroku
