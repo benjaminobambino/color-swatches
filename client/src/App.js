@@ -8,17 +8,15 @@ import Detail from './components/detail/Detail';
 import useData from './hooks/useData';
 
 function App() {
-  const [colors, setColors] = useState([]);
   const [swatches, setSwatches] = useState([]);
 
-  useData('colors/', setColors);
   useData('swatches/', setSwatches);
 
   return (
     <div className="App">
       <Header />
       <section className="main">
-        <Sidebar colors={colors} swatches={swatches} />
+        <Sidebar swatches={swatches} />
         <Routes>
           <Route
             path="/"
