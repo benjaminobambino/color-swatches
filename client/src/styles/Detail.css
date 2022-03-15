@@ -1,7 +1,7 @@
 .detail {
   display: flex;
   flex-flow: column;
-  
+
   height: 90vh;
   overflow-y: scroll;
   margin: 0 auto;
@@ -11,19 +11,21 @@
   margin-top: 7vh;
   border: 1px solid #1c1f1f;
   border-radius: 7px;
-  height: 82vw;
+  height: 48vh;
 }
 
 .detail-card-background {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  height: 70vw;
-  width: 70vw;
+  height: 40vh;
+  width: 60vw;
+  max-width: 500px;
 }
 
 .detail-card p {
   font-size: 4.5vw;
-  margin: 3vw 4vw;
+  font-size: 30px;
+  margin: 2vh 4vw;
   color: #1c1f1f;
 }
 
