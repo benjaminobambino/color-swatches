@@ -1,4 +1,6 @@
 .detail {
+  display: flex;
+  flex-flow: column;
   margin: 7vh auto;
 }
 
@@ -19,4 +21,17 @@
   font-size: 4.5vw;
   margin: 3vw 4vw;
   color: #1c1f1f;
+}
+
+.clear-button {
+  margin: 5vh auto;
+  width: 25vw;
+  height: 5vh;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #424848;
+  background-color: #ffffff;
+  border: 1px solid #1c1f1f;
+  border-radius: 7px;
 }

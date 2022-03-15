@@ -1,6 +1,6 @@
 const ClearButton = () => {
   return (
-    <button>
+    <button className="clear-button">
       Clear
     </button>
   )
