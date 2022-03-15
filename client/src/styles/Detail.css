@@ -11,13 +11,13 @@
   margin-top: 7vh;
   border: 1px solid #1c1f1f;
   border-radius: 7px;
-  height: 48vh;
+  height: 60vh;
 }
 
 .detail-card-background {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  height: 40vh;
+  height: 50vh;
   width: 60vw;
 }
 
@@ -31,7 +31,9 @@
 .clear-button {
   margin: 5vh auto;
   width: 25vw;
-  height: 5vh;
+  max-width: 250px;
+  min-width: 100px;
+  height: 60px;
   font-family: 'Source Serif Pro', serif;
   font-weight: bold;
   font-size: 18px;
